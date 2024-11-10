@@ -26,7 +26,7 @@ pyhton mathUest.py
 
 ## License
 
-This project is licensed Apache license
+This project is licensed under Apache license
 
 ## Contact
 
