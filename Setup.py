@@ -1,13 +1,13 @@
-from setuptools import setup, find_packages, setup
+from setuptools import setup, find_packages
 
 setup(
     name='math_quiz_game',  
     version="1.0",  
-    description='A math quiz to practise problem with two integers and an operator'        
+    description='A math quiz to practise problem with two integers and an operator',       
     packages=find_packages(),  
-    include_package_data=True
+    include_package_data=True,
     install_requires=[],
-    license='Apache License'
+    license='Apache License',
     author='Ajinkya Sathe',      
     author_email='ajinkya.sathe@fau.de', 
     long_description=open('README.md').read(),  
@@ -15,7 +15,12 @@ setup(
     url='https://github.com/AjinkyaSathe29/DSSS_Homework2.git',  
     classifiers=[          
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: Apache License',
         'Operating System :: OS Independent',
     ],
+    entry_points={
+        'console_scripts': [
+            'math_quiz=math_quiz',  
+        ],
+    },
 )
